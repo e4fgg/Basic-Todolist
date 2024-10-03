@@ -14,7 +14,7 @@ class Todolist:
         # Adds the task to their list.
         self.tasks.append(task)
         # Outputs that the task has been added successful.
-        print("Task has been successfully added ✅\n" + task)
+        print("\nTask has been successfully added ✅\n" + task)
 
     # A function named remove_task is defined, the purpose is to remove a task from the task list.
     def remove_task(self, task):
@@ -31,7 +31,7 @@ class Todolist:
         # If a user has tasks, they will be displayed.
         if self.tasks:
             # If a user has a task, it will be displayed on the console. 
-            print("Here are your tasks:")
+            print("\nHere are your tasks:")
             # This indicates that the index will start at 1 instead of the default of 0. 
             for index, task in enumerate(self.tasks, start=1):
                 print(f'{index}. {task}')
